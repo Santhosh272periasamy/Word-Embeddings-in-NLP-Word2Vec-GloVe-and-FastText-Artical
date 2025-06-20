@@ -1,10 +1,10 @@
-# 🧠 Word Embeddings in NLP: Word2Vec, GloVe, and FastText
+#  Word Embeddings in NLP: Word2Vec, GloVe, and FastText
 
 This project provides an in-depth explanation of **Word Embeddings** in Natural Language Processing (NLP), focusing on three popular techniques: **Word2Vec**, **GloVe**, and **FastText**. These embeddings are essential tools that convert words into dense vector representations, allowing machines to understand human language more effectively.
 
 ---
 
-## 📌 Contents
+##  Contents
 
 - 🔹 Introduction to Word Embeddings  
 - 🔹 Word2Vec  
@@ -23,7 +23,7 @@ This project provides an in-depth explanation of **Word Embeddings** in Natural 
 
 ---
 
-## 📘 Summary
+##  Summary
 
 ### 🔹 Why Word Embeddings?
 Computers understand numbers, not text. Word embeddings help bridge this gap by converting words into numerical vectors that capture **semantic meaning** and **contextual relationships**.
@@ -35,7 +35,7 @@ Computers understand numbers, not text. Word embeddings help bridge this gap by 
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Markdown (for documentation)
 - Python (recommended for implementation)
@@ -44,7 +44,7 @@ Computers understand numbers, not text. Word embeddings help bridge this gap by 
 
 ---
 
-## 📈 Applications
+## Applications
 
 These embedding techniques are foundational for tasks such as:
 - Sentiment Analysis  
