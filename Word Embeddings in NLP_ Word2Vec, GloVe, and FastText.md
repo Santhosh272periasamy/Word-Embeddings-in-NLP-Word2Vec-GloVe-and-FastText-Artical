@@ -131,6 +131,9 @@ How often **word j** appears in the context of **word i**
 
 **Formula:**
 
+![image](https://github.com/user-attachments/assets/8e62458b-4026-4fba-b075-174d21b52cec)
+
+
 GloVe uses below formula to learned using matrix factorization
 
 So, why take the **log** of the co-occurrence counts in GloVe?
