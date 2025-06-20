@@ -1,6 +1,6 @@
-**Title :** Understanding Word Embeddings in NLP: Word2Vec, GloVe, and FastText
+## **Title :** Understanding Word Embeddings in NLP: Word2Vec, GloVe, and FastText
 
-**Introduction:**
+### **Introduction:**
 
 Before diving into the concept of word embeddings, it’s important to understand **why** we need them. Computers don't understand human language the way we do, they understand only numbers. So, to process and analyze text data, we must convert words into a numerical format.
 
@@ -8,7 +8,7 @@ Before diving into the concept of word embeddings, it’s important to understan
 
 For example, the word *"bank"* can refer to either a **financial institution** or the **side of a river**. Word embeddings capture these **contextual meanings** by placing the word in a vector space based on the surrounding words in the text and helping models understand such variations in meaning.
 
-**Types of Word Embedding:**
+### **Types of Word Embedding:**
 
 There are three widely used word embedding techniques in NLP:
 
@@ -18,9 +18,10 @@ There are three widely used word embedding techniques in NLP:
 
 ·        **FastText**
 
- 
+ -------------
+ -------------
 
-**1.Word2Vec:**
+### **1.Word2Vec:**
 
 **Word2Vec** is a popular word embedding technique developed by **Tomas Mikolov** and his team at **Google** in 2013\. It learns vector representations of words from large-scale text data and captures semantic relationships between them.
 
@@ -34,11 +35,14 @@ This illustrates that Word2Vec captures relationships such as gender, roles, and
 
 Word2Vec has two main architectures:
 
-·       CBOW ( Continuous Bag of Words )
+* CBOW ( Continuous Bag of Words )
 
-·       Skip-Gram
+* Skip-Gram
 
-**CBOW (Continuous Bag of Words):**
+-------------
+
+
+#### **CBOW (Continuous Bag of Words):**
 
 * **Objective**: Predict the target word based on its surrounding context words.  
 * **Direction**: Context → Target  
@@ -55,10 +59,11 @@ Sentence: *"The cat sat on the mat"*
 | on | sat , the |
 | the | on , Mat |
 
- 
+
 
 In this approach, the model looks at a window of surrounding words and tries to guess the middle word.
 
+-------
 #### **Skip-Gram:**
 
 ·        **Objective**: Predict the context words given the target word.
@@ -80,6 +85,7 @@ Using the same sentence:
 
 Skip-Gram is more computationally expensive but usually gives better results on smaller datasets or rare words.
 
+---------
 **Pros:**
 
 ·       Fast to train and capture Semantic relationships.
@@ -92,9 +98,13 @@ Skip-Gram is more computationally expensive but usually gives better results on 
 
 ·       Cannot distinguish between polysemy ( ex: bank : river bank / financial bank) , (one vector per word).
 
+
+
+--------------
+--------------
  
 
-**2\. GloVe (Global Vectors for Word Representation)**
+### **2. GloVe (Global Vectors for Word Representation)**
 
 **GloVe** is a word embedding technique developed by **Stanford University** that blends the best of **local context learning** (like Word2Vec) and **global statistical information** (like matrix factorization).
 
@@ -144,7 +154,7 @@ This makes the training **more stable** and helps the model learn **meaningful r
 
 Think of it like this: \> Word2Vec is like learning by overhearing short conversations. \> Pure matrix factorization is like reading a giant dictionary. \> **GloVe is both — it listens *and* reads.**
 
- 
+--------------- 
 
 **Pros:**
 
@@ -158,9 +168,13 @@ Think of it like this: \> Word2Vec is like learning by overhearing short convers
 
 ·        Still no out of vocabulary handling
 
+-----------------
+-----------------
+
+
  
 
-3.FastText:
+### **3.FastText:**
 
 **FastText**, developed by **Facebook AI Research (FAIR)**, improves upon Word2Vec by incorporating **subword information** into word embeddings.
 
@@ -208,6 +222,7 @@ FastText generates **more robust** word vectors:
 
 ·        More contextually aware due to morphological patterns
 
+-----------
 **Pros:**
 
 ·        Handles **out-of-vocabulary** words.
@@ -222,6 +237,8 @@ FastText generates **more robust** word vectors:
 
 ·        More complex vector structure.
 
+------------
+------------
  
 
 ### **Conclusion:**
@@ -236,3 +253,5 @@ Word embeddings have fundamentally changed how machines process human language b
 
 Selecting the right embedding method depends on your data and task complexity. As NLP continues to evolve, these foundational methods remain crucial building blocks for developing context-aware, intelligent language models.
 
+------------
+------------
